@@ -1,0 +1,108 @@
+
+.form-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranges{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-input{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+
+.border-values{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: end;
+}
+
+.border-values > p{
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: smaller;
+    color: #98a798;
+}
+
+
+.custom-select{
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 40px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+
+.custom-range {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+.custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.custom-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}

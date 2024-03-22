@@ -1,0 +1,15 @@
+<div class="dark-container">
+    <div class="card-container">
+            @for (product of Products.changedProductsBaller(); track product.id) {
+                <app-products-items
+                    [id] = "product.id"
+                    [title] = "product.title"
+                    [price] = "product.price"
+                    [description] = "product.description"
+                    [rating] = "product.rating"
+                    [image] = "product.images[0]"
+                    [category] = "product.category"
+                    />
+                }
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="card">
+<img [src]="image" alt="">
+<h2>{{title}}</h2>
+<p>{{price}} $</p>
+<p>{{category}}</p>
+<div>
+@for (star of [].constructor(fullStars); track $index) {
+    <span class="fa fa-star active"></span>
+}
+@for (star of [].constructor(emptyStars); track $index) {
+    <span class="fa fa-star"></span>
+}
+</div>
+</div>

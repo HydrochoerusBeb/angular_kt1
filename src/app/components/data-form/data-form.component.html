@@ -1,0 +1,29 @@
+<div class="form-container">
+    <div class="form">
+        <div class="inputs">
+            <label for="">Поиск</label>
+        <input type="text" [(ngModel)]="products.nameValue" class="custom-input">
+            <label for="">Категория</label>
+        <select name="" id="" class="custom-select" [(ngModel)]="products.choosenCategory">
+            @for (category of products.categories; track $index) {
+                <option [value]="category">{{ category }}</option>
+                }
+                <option>all</option>
+            </select>
+        </div>
+        <div class="ranges">        
+            <label for="" class="form-label">цена {{products.priceBorder}}</label>
+            <div class="border-values">
+                <p>0</p>
+                <p>{{products.priceMax}}</p>
+            </div>
+            <input type="range" min="0" step="50" [(ngModel)]="products.priceBorder" [max]="products.priceMax" class="custom-range">
+            <label for="" class="form-label">рейтинг {{products.ratingBorder}}</label>
+            <div class="border-values">
+                <p>1</p>
+                <p>5</p>
+            </div>
+            <input type="range" [(ngModel)]="products.ratingBorder" max="5" step="1" class="custom-range">
+        </div>
+    </div>
+</div>
